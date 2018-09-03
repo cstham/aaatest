@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.engine.erebus.erebusengine_module.ErebusTest;
 import com.engine.erebus.erebusengine_module.LatLonDistanceCalculator;
 import com.engine.erebus.erebusengine_module.Point;
 
@@ -26,5 +27,6 @@ public class MainActivity extends AppCompatActivity {
         TextView kilometersLabel = (TextView) findViewById(R.id.kilometers_label);
 
         kilometersLabel.setText("Between the Obelisco and the Statue of Liberty there are: \n" + distanceBetweenPoints + "KM");
+        System.out.println("Erebus engine: "+ ErebusTest.demonstrateString());
     }
 }
